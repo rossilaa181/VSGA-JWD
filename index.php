@@ -26,7 +26,10 @@
 			break;
 			case 'bagi':
 				$hasil = $bil1/$bil2;
-			break;			
+			break;
+			case 'modulus':
+				$hasil = $bil1%$bil2;
+			break;
 		}
 	}
 	?>
@@ -44,6 +47,7 @@
 				<option <?php echo @$_POST['operasi'] === 'kurang' ? 'selected' : '' ?> value="kurang">-</option>
 				<option <?php echo @$_POST['operasi'] === 'kali' ? 'selected' : '' ?> value="kali">x</option>
 				<option <?php echo @$_POST['operasi'] === 'bagi' ? 'selected' : '' ?> value="bagi">/</option>
+				<option <?php echo @$_POST['operasi'] === 'modulus' ? 'selected' : '' ?> value="modulus">%</option>
 			</select>
 			<input type="submit" name="hitung" value="Hitung" class="tombol">											
 		</form>
