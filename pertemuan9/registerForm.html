@@ -1,0 +1,91 @@
+<!-- <html>
+<head>
+    <title>Membuat Form Pendaftaran Registrasi Dengan PHP MySQL - Tutorial</title>    
+</head>
+<body>
+    <h2>Membuat Form Pendaftaran Registrasi Dengan PHP MySQL</h2>
+    <h4>Silahkan Isi Data Pada Kolom Tersedia!</h4>
+    <form action="registrasi.php" method="post" name="form1">        
+        <table>
+            <tr>
+                <td width="120">Username</td>
+                <td><input type="text" name="userid"></td>
+            </tr>
+            <tr>
+                <td width="120">Nama</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><input type="text" name="alamat"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>No. HP</td>
+                <td><input type="text" name="hp"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Load file CSS Bootstrap offline -->
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/registerBG.css">
+</head>
+<body>
+<div class="container">
+<h2>Form Pendaftaran Anggota</h2>
+    <form action="proses.php" method="post">
+        <div class="form-group">
+            <label>Username:</label>
+            <input type="text" name="username" class="form-control" placeholder="Masukan Username" required/>
+        </div>
+	<div class="form-group">
+            <label>Nama:</label>
+            <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" />
+        </div>
+	<div class="form-group">
+	     <label>Alamat:</label>
+	     <textarea name="alamat" class="form-control" rows="5"placeholder="Masukan Alamat" ></textarea>
+	</div> 
+	<div class="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" class="form-control" placeholder="Masukan Email" />
+        </div>
+	<div class="form-group">
+            <label>No HP:</label>
+            <input type="number" name="no_hp" class="form-control" placeholder="Masukan No HP" />
+        </div>
+	<div class="form-group">
+            <label>Password:</label>
+            <input type="password" name="password" class="form-control" placeholder="Masukan Password" required />
+        </div>
+
+        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+</div>
+</body>
+</html>
